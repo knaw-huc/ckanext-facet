@@ -41,7 +41,7 @@
     {% block package_notes %}
       {% if pkg.notes %}
           {# TODO: move the lang_list definiction to the controller #}
-          {% set lang_list = ['deu', 'nds', 'nld', 'fry', 'dan', 'da', 'en', 'eng'] %}
+          {% set lang_list = ['deu', 'nds', 'nl', 'nld', 'fry', 'dan', 'da', 'en', 'eng'] %}
           {% for extra in h.sorted_extras(pkg.extras) %}
               {% set key, value = extra %}
               {% if key in lang_list %}
