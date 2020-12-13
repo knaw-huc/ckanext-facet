@@ -33,7 +33,7 @@ Example:
         <div class="hcItemsStretch hcSmallTxt">
         {% if c.controller %}
             <div class="hcColumnsEqual">
-              {% set key, keywords = h.facet_get_extra_data_field(package.extras, 'keyword', True) if h.facet_get_extra_data_field(package.extras, 'keyword', True) else (None, None) %}
+              {% set key, keywords = h.facet_get_extra_data_field(package.extras, '_keyword', True) if h.facet_get_extra_data_field(package.extras, '_keyword', True) else (None, None) %}
               {% set keywords = keywords.split(';') if keywords else [] %}
               {% for keyword in keywords[:7] %}
                 <div class="hcIsTags">
