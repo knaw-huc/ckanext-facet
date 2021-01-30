@@ -154,15 +154,6 @@
               {% endif %}
             <div class="hcMarginBottom2"></div>
 
-            {% set keywords = h.facet_get_similar_fields_from_extras(pkg.extras, 'keyword_') %}
-            <div>Keywords:
-                {% for keyword in keywords %}
-                    {% set k, v = keyword %}
-                    <div class="hcLabel">{{ _(k.decode('utf-8')) }}</div>
-                    <div>{{ v.decode('utf-8') }}</div>
-                {% endfor %}
-
-            </div>
         {% endif %}
       {% endblock %}
 
