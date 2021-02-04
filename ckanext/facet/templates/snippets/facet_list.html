@@ -86,7 +86,7 @@ within_tertiary
 
 {#              <p class="module-footer">#}
                 {% if h.get_param_int('_%s_limit' % name) %}
-                  {% if h.has_more_facets(name) %}
+                  {% if h.has_more_facets(name, search_facts or c.search_facts) %}
                     <a href="{{ h.remove_url_param('_%s_limit' % name, replace=0, extras=extras, alternative_url=alternative_url) }}">{{ _('Show More {facet_type}').format(facet_type=title) }}</a>
                   {% endif %}
                 {% else %}
