@@ -209,6 +209,7 @@ class FacetPlugin(plugins.SingletonPlugin):
         facets_dict['da_keyword'] = toolkit._('Danish Keywords')
         facets_dict['nl_keyword'] = toolkit._('Dutch Keywords')
         facets_dict['deu_keyword'] = toolkit._('German Keywords')
+        facets_dict['is_keyword'] = toolkit._('Icelandic Keywords')
 
         facets_dict['placeMentioned'] = toolkit._('Place Mentioned')
         facets_dict['place_narration'] = toolkit._('Place of Narration')
